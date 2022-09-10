@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeriaUdeoVotos2022", "FeriaUdeoVotos2022\FeriaUdeoVotos2022.csproj", "{FAB5B91E-2504-44DC-9DFA-8EB3B26E125D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoriosVotos", "RepositoriosVotos\RepositoriosVotos.csproj", "{FF4C8965-47A6-4755-BA0F-2FF5EE7C3460}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB5B91E-2504-44DC-9DFA-8EB3B26E125D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB5B91E-2504-44DC-9DFA-8EB3B26E125D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB5B91E-2504-44DC-9DFA-8EB3B26E125D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB5B91E-2504-44DC-9DFA-8EB3B26E125D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF4C8965-47A6-4755-BA0F-2FF5EE7C3460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF4C8965-47A6-4755-BA0F-2FF5EE7C3460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF4C8965-47A6-4755-BA0F-2FF5EE7C3460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF4C8965-47A6-4755-BA0F-2FF5EE7C3460}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {739123F4-D3FC-4CCA-AE25-A62330F11F27}
+	EndGlobalSection
+EndGlobal

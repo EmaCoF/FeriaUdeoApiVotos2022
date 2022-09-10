@@ -1,0 +1,14 @@
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\bin\Debug\net6.0\RepositoriosVotos.deps.json
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\bin\Debug\net6.0\RepositoriosVotos.runtimeconfig.json
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\bin\Debug\net6.0\RepositoriosVotos.dll
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\bin\Debug\net6.0\RepositoriosVotos.pdb
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\RepositoriosVotos.csproj.AssemblyReference.cache
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\RepositoriosVotos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\RepositoriosVotos.AssemblyInfoInputs.cache
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\RepositoriosVotos.AssemblyInfo.cs
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\RepositoriosVotos.csproj.CoreCompileInputs.cache
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\RepositoriosVotos.dll
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\refint\RepositoriosVotos.dll
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\RepositoriosVotos.pdb
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\RepositoriosVotos.genruntimeconfig.cache
+D:\Documents\tareas\Desarrollo Movil\1\Proyecto\RepoApiVotos\FeriaUdeoApiVotos2022\FeriaUdeoVotos2022\RepositoriosVotos\obj\Debug\net6.0\ref\RepositoriosVotos.dll
