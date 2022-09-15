@@ -10,6 +10,7 @@ namespace RepositoriosVotos.Repository
     public interface IVotoRepository
     {
         Task<int> CrearVotoAsync(string User, int IdUser, int IdProyecto, int Voto);
+        Task<bool> GetEventoVotoAsync();
         Task<int> CambiarVoto(string User, int IdUser, int IdProyecto, int Voto);
     }
 }

@@ -49,6 +49,14 @@ namespace RepositoriosVotos.Repository
             }   
         }
 
+        public async Task<bool> GetEventoVotoAsync()
+        {
+
+            Evento evento = await _context.Eventos.FindAsync(1);
+            bool respuesta = evento.Activo;
+
+            return respuesta;
+        }
 
         public async Task<int> CambiarVoto(string User, int IdUser, int IdProyecto, int Voto)
         {
@@ -61,15 +69,34 @@ namespace RepositoriosVotos.Repository
                     var registro = _context.VotoUsuarios.Where(x=>x.IdProyecto==IdProyecto && x.IdUsuario==IdUser).FirstOrDefault();
                     if (registro==null)
                     {
-                        return 404;
+                        VotoUsuario NewVoto = new VotoUsuario
+                        {
+                            IdProyecto = IdProyecto,
+                            IdUsuario = IdUser,
+                            Puntuacion = Voto
+                        };
+                        _context.VotoUsuarios.Add(NewVoto);
+                        var newproyecto = _context.Proyectos.FirstOrDefault(x => x.IdProyecto == IdProyecto);
+                        newproyecto.Votos = newproyecto.Votos + Voto;
+                        int resultado2 = await _context.SaveChangesAsync();
+                        if (resultado2 == 0)
+                        {
+                            return 500;
+                        }
+                        else
+                        {
+                            return 200;
+                        }
                     }
                     int sumador = Voto-Convert.ToInt16(registro.Puntuacion);
                     var proyecto = _context.Proyectos.FirstOrDefault(x => x.IdProyecto == IdProyecto);
 
                     registro.Puntuacion = Voto;
                     proyecto.Votos = proyecto.Votos + sumador;
-                    await _context.SaveChangesAsync();
+                    int resultado= await _context.SaveChangesAsync();
+
                     return 200;
+                    
                 }
                 else
                 {

@@ -16,34 +16,6 @@ namespace FeriaUdeoVotos2022.Controllers
             _votosRepository = dataRepository;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<string>> PostVoto(VotosModel mensaje)
-        {
-
-            if (mensaje.voto > 5 || mensaje.voto < 0)
-            {
-                return BadRequest();
-            }
-
-            var respuesta = await _votosRepository.CrearVotoAsync(mensaje.usuario, mensaje.idUsuaio, mensaje.idProyecto, mensaje.voto);
-            
-            switch (respuesta)
-            {
-                case 500:
-                case 0:
-                    return Problem("Error");
-                    break;
-
-                case 404:
-                    return NotFound("Usuario no valido");
-                    break;
-                case 200:
-                    return Ok("Voto añadido");
-                    break;
-                
-                default: return Problem("Error");
-            }
-        }
 
         [HttpPut]
         public async Task<ActionResult<string>> PutVoto(VotosModel mensaje)
@@ -53,8 +25,11 @@ namespace FeriaUdeoVotos2022.Controllers
             {
                 return BadRequest();
             }
-
-            var respuesta = await _votosRepository.CambiarVoto(mensaje.usuario, mensaje.idUsuaio, mensaje.idProyecto, mensaje.voto);
+            if (!await _votosRepository.GetEventoVotoAsync())
+            {
+                return Unauthorized();
+            }
+            var respuesta = await _votosRepository.CambiarVoto(mensaje.usuario, mensaje.idUsuario, mensaje.idProyecto, mensaje.voto);
 
             switch (respuesta)
             {
@@ -67,7 +42,7 @@ namespace FeriaUdeoVotos2022.Controllers
                     return NotFound("Usuario no valido");
                     break;
                 case 200:
-                    return Ok("Voto añadido");
+                    return Created("Voto añadido","");
                     break;
 
                 default: return Problem("Error");
