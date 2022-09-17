@@ -67,6 +67,7 @@ namespace RepositoriosVotos.Repository
                 {
 
                     var registro = _context.VotoUsuarios.Where(x=>x.IdProyecto==IdProyecto && x.IdUsuario==IdUser).FirstOrDefault();
+                    var registros = await _context.VotoUsuarios.ToListAsync();
                     if (registro==null)
                     {
                         VotoUsuario NewVoto = new VotoUsuario
@@ -95,7 +96,14 @@ namespace RepositoriosVotos.Repository
                     proyecto.Votos = proyecto.Votos + sumador;
                     int resultado= await _context.SaveChangesAsync();
 
-                    return 200;
+                    if (resultado>0)
+                    {
+                        return 200;
+                    }
+                    else
+                    {
+                        return 500;
+                    }
                     
                 }
                 else

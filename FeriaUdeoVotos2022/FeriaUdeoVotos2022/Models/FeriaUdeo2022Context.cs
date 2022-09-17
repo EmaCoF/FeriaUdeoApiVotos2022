@@ -35,7 +35,7 @@ namespace FeriaUdeoVotos2022.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=N1NWPLSK12SQL-v01.shr.prod.ams1.secureserver.net;Initial Catalog=FeriaUdeo2022;Integrated Security=False;User ID=FeriaUdeoDEV;Password=X93Uwm68UBSLJTs;");
+                optionsBuilder.UseSqlServer("Data Source=SQL8003.site4now.net;Initial Catalog=db_a8d00f_feriaudeo2022;User Id=db_a8d00f_feriaudeo2022_admin;Password = X93Uwm68UBSLJTs; ");
             }
         }
 
